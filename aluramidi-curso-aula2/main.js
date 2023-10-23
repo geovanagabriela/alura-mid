@@ -4,7 +4,8 @@ function idElemento Audio () {
 
 const listadeTeclas = document.querySelectorAll('.tecla);
 let contador = 0
-while (contador < 9) {
-    listadeTeclas[contador].onclick = TocaSom;
+while (contador < listaDeTeclas.length) {
+    listadeTeclas[contador].onclick = function(){
+    TocaSom}
     contador = contador + 1;
 }
