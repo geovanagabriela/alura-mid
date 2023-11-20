@@ -14,10 +14,10 @@ for (let contador = 0; contador < listaDeTeclas.length; contador++) {
 
     contador = contador + 1;
     tecla.onkeydown = function(evento){
-        if(evento.code == 'enter')
+        if(evento.code ==='enter' || evento.code==="space")
         tecla.classList.add('ativa')
     }
-    tecla.onkeyup = function(){
+    tecla.onkeyup = function () {
         tecla.classList.remove('ativa')
 }
 }
